@@ -33,7 +33,7 @@ def get_memory_stats():
 
 class Plugin(PluginBase):
     def main_menu(self):
-        return [Menu(_("Diagnostic"), self.public_url(""), "fa fa-chart-pie fa-fw")]
+        return [Menu(_("System Stats"), self.public_url(""), "fa fa-chart-pie fa-fw")]
 
     def app_mount_points(self):
         @login_required
