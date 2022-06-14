@@ -1,4 +1,4 @@
-{
+/*{
 	"name": "POSM GCP Interface",
 	"webodmMinVersion": "0.5.0",
 	"description": "A plugin to create GCP files from images",
@@ -10,4 +10,4 @@
 	"homepage": "https://github.com/OpenDroneMap/WebODM",
 	"experimental": true,
 	"deprecated": false
-}
+}*/
