@@ -32,10 +32,12 @@
                 <li>
                     <a href="/dashboard/"><i class="fa fa-tachometer-alt fa-fw"></i> {% trans 'Dashboard' %}</a>
                 </li>
-                {% load processingnode_extras plugins %}
-                {% can_view_processing_nodes as view_nodes %}
-                {% can_add_processing_nodes as add_nodes %}
-                {% get_visible_processing_nodes as nodes %}
+                {% if user.is_staff %}
+                    {% load processingnode_extras plugins %}
+                    {% can_view_processing_nodes as view_nodes %}
+                    {% can_add_processing_nodes as add_nodes %}
+                    {% get_visible_processing_nodes as nodes %}
+                {% endif %}
 
                 {% get_plugins_main_menus as plugin_menus %}
                 {% for menu in plugin_menus %}
