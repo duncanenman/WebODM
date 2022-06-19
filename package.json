@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OpenDroneMap/WebODM.git"
+    "url": "git+https://github.com/duncanenman/WebODM.git"
   },
   "keywords": [
     "opendronemap"
